@@ -1,7 +1,7 @@
 from my_functions import *
 import os
 
-source = '2person_test.mp4'
+source = 'mb1.mp4'
 
 save_video = True
 show_video = True
