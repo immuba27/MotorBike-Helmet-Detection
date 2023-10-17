@@ -1,0 +1,46 @@
+2023-10-16 11:04:30,470 - INFO - Image: 1697434337.1119878_0.52.jpg, Plate Text: UP16BP5260 (Inserted into MySQL)
+2023-10-16 11:04:30,471 - INFO - File '1697434337.1119878_0.52.jpg' removed successfully.
+2023-10-16 11:04:31,620 - INFO - Image: 1697434342.9110584_0.47.jpg, Plate Text: GJ16BP5260 (Inserted into MySQL)
+2023-10-16 11:04:31,621 - INFO - File '1697434342.9110584_0.47.jpg' removed successfully.
+2023-10-16 11:04:32,723 - WARNING - Image: 1697434345.5785897_0.55.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:32,723 - INFO - File '1697434345.5785897_0.55.jpg' removed successfully.
+2023-10-16 11:04:33,868 - WARNING - Image: 1697434349.6336193_0.53.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:33,870 - INFO - File '1697434349.6336193_0.53.jpg' removed successfully.
+2023-10-16 11:04:36,988 - WARNING - Image: 1697434356.478869_0.44.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:36,988 - INFO - File '1697434356.478869_0.44.jpg' removed successfully.
+2023-10-16 11:04:38,066 - WARNING - Image: 1697434358.0650644_0.39.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:38,067 - INFO - File '1697434358.0650644_0.39.jpg' removed successfully.
+2023-10-16 11:04:39,230 - WARNING - Image: 1697434360.3608768_0.4.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:39,230 - INFO - File '1697434360.3608768_0.4.jpg' removed successfully.
+2023-10-16 11:04:40,319 - WARNING - Image: 1697434364.653174_0.35.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:40,320 - INFO - File '1697434364.653174_0.35.jpg' removed successfully.
+2023-10-16 11:04:41,750 - WARNING - Image: 1697434366.9519806_0.5.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:41,751 - INFO - File '1697434366.9519806_0.5.jpg' removed successfully.
+2023-10-16 11:04:43,075 - INFO - Image: 1697434369.7290757_0.42.jpg, Plate Text: GJ16BP5250 (Inserted into MySQL)
+2023-10-16 11:04:43,076 - INFO - File '1697434369.7290757_0.42.jpg' removed successfully.
+2023-10-16 11:04:45,775 - WARNING - Image: 1697434371.3624876_0.49.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:45,775 - INFO - File '1697434371.3624876_0.49.jpg' removed successfully.
+2023-10-16 11:04:46,979 - WARNING - Image: 1697434373.4541774_0.51.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:46,980 - INFO - File '1697434373.4541774_0.51.jpg' removed successfully.
+2023-10-16 11:04:49,786 - WARNING - Image: 1697434375.0387905_0.58.jpg, Plate Text: GJ16BP5250 already exists in the database
+2023-10-16 11:04:49,787 - INFO - File '1697434375.0387905_0.58.jpg' removed successfully.
+2023-10-16 11:04:50,973 - WARNING - Image: 1697434376.6288779_0.58.jpg, Plate Text: GJ16BP5250 already exists in the database
+2023-10-16 11:04:50,974 - INFO - File '1697434376.6288779_0.58.jpg' removed successfully.
+2023-10-16 11:04:52,097 - WARNING - Image: 1697434378.1743138_0.46.jpg, Plate Text: GJ16BP5250 already exists in the database
+2023-10-16 11:04:52,098 - INFO - File '1697434378.1743138_0.46.jpg' removed successfully.
+2023-10-16 11:04:53,737 - WARNING - Image: 1697434379.807373_0.43.jpg, Plate Text: GJ16BP5250 already exists in the database
+2023-10-16 11:04:53,738 - INFO - File '1697434379.807373_0.43.jpg' removed successfully.
+2023-10-16 11:04:54,861 - WARNING - Image: 1697434381.4490516_0.45.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:54,861 - INFO - File '1697434381.4490516_0.45.jpg' removed successfully.
+2023-10-16 11:04:56,294 - WARNING - Image: 1697434383.4064486_0.47.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:56,295 - INFO - File '1697434383.4064486_0.47.jpg' removed successfully.
+2023-10-16 11:04:57,731 - WARNING - Image: 1697434385.1416528_0.42.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:57,732 - INFO - File '1697434385.1416528_0.42.jpg' removed successfully.
+2023-10-16 11:04:58,959 - WARNING - Image: 1697434387.0920162_0.51.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:04:58,960 - INFO - File '1697434387.0920162_0.51.jpg' removed successfully.
+2023-10-16 11:05:00,006 - WARNING - Image: 1697434389.0007043_0.44.jpg, Plate Text: GJ16BP5260 already exists in the database
+2023-10-16 11:05:00,007 - INFO - File '1697434389.0007043_0.44.jpg' removed successfully.
+2023-10-16 11:05:01,313 - WARNING - Image: 1697434391.079314_0.46.jpg, Plate Text: GJ16BP5250 already exists in the database
+2023-10-16 11:05:01,313 - INFO - File '1697434391.079314_0.46.jpg' removed successfully.
+2023-10-16 11:05:02,441 - WARNING - Image: 1697434393.1751952_0.51.jpg, Plate Text: GJ16BP5250 already exists in the database
+2023-10-16 11:05:02,441 - INFO - File '1697434393.1751952_0.51.jpg' removed successfully.
