@@ -97,7 +97,7 @@ while (cap.isOpened()):
         if save_img:  # save img
             cv2.imwrite('saved_frame.jpg', frame)
         if show_video:  # show video
-            frame = cv2.resize(frame, (900, 450))
+            frame = cv2.resize(frame, (800, 480))
             cv2.imshow('Frame', frame)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
