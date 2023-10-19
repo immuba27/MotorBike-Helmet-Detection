@@ -6,3 +6,10 @@ numpy
 tqdm
 pandas
 matplotlib
+flask
+apscheduler
+requests
+mysql-connector-python
+datetime
+shutil
+logging
