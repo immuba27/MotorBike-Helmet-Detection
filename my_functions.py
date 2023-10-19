@@ -1,4 +1,3 @@
-
 import cv2
 import torch
 import torch.backends.cudnn as cudnn
@@ -9,19 +8,12 @@ from torchvision import transforms
 from PIL import Image
 import time
 
-
 yolov5_weight_file = 'rider_helmet_number.pt'
 helmet_classifier_weight = 'helment_no_helmet.pth'
 conf_set=0.35 
 frame_size=(800, 480) 
 head_classification_threshold= 2.0 # Lower the better, tested with other values, this seems to be great fit
 
-
-# Some list of shape yolov5 except
-# 1824, 1376 
-# 1024, 576 # cs=4.1
-# 928, 544
-# 800, 480 # cs=3.9
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = attempt_load(yolov5_weight_file, map_location=device)
@@ -46,7 +38,7 @@ transform = transforms.Compose([
 def img_classify(frame):
 	# print('Head size: ',frame.shape[:-1])
 
-	if frame.shape[0]<46 : # skiping small size heads <----------------  you can adjust this value
+	if frame.shape[0]<46 : # skiping small size heads
 		return [None, 0]
 
 	frame = transform(Image.fromarray(frame))
@@ -56,18 +48,17 @@ def img_classify(frame):
 	prediction_conf = sorted(prediction[0]) 
 
 	cs = (prediction_conf[-1]-prediction_conf[-2]).item() # confident score
-	# print(cs) 
-	# provide a threshold value of classification prediction as cs
-	if cs > head_classification_threshold: #< --- Classification confident score. Need to adjust, this value
+
+	if cs > head_classification_threshold: #< --- Classification confident score
 		return [True, cs] if result_idx == 0 else [False, cs]
 	else:
 		return [None, cs]
 
-
+#----------Working One------------#
 def object_detection(frame):
 	img = torch.from_numpy(frame)
 	img = img.permute(2, 0, 1).float().to(device)
-	img /= 255.0  
+	img /= 255.0
 	if img.ndimension() == 3:
 		img = img.unsqueeze(0)
 
@@ -76,7 +67,7 @@ def object_detection(frame):
 
 	detection_result = []
 	for i, det in enumerate(pred):
-		if len(det): 
+		if len(det):
 			for d in det: # d = (x1, y1, x2, y2, conf, cls)
 				x1 = int(d[0].item())
 				y1 = int(d[1].item())
@@ -84,13 +75,13 @@ def object_detection(frame):
 				y2 = int(d[3].item())
 				conf = round(d[4].item(), 2)
 				c = int(d[5].item())
-				
+
 				detected_name = names[c]
 
 				# print(f'Detected: {detected_name} conf: {conf}  bbox: x1:{x1}    y1:{y1}    x2:{x2}    y2:{y2}')
 				print(f'Detected: {detected_name} conf: {conf}')
 				detection_result.append([x1, y1, x2, y2, conf, c])
-				
+
 				frame = cv2.rectangle(frame, (x1, y1), (x2, y2), (255,0,0), 1) # box
 				if c!=1: # if it is not head bbox, then write use putText
 					frame = cv2.putText(frame, f'{names[c]} {str(conf)}', (x1, y1), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1, cv2.LINE_AA)
@@ -128,3 +119,4 @@ def image_to_text(number_plate_text):
     plate_text = str(s).upper()
 
     return plate_text
+

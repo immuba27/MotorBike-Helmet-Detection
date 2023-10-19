@@ -43,33 +43,18 @@ while (cap.isOpened()):
                     except:
                         helmet_present[0] = None
 
-                    if helmet_present[0] == True:
+                    if helmet_present[0] == True:  # if helmet present
                         frame = cv2.rectangle(frame, (x1h, y1h), (x2h, y2h), (0, 255, 0), 1)
-                        frame = cv2.putText(frame, f'{round(helmet_present[1], 2)} Helmet Detected', (x1h, y1h + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
-                        print('----------Helmet Detected-------------')
-                        # Detect if there are 3 or more passengers on the bike
-                        if len(head_list) >= 1:
-                            for num in number_list:
-                                x1_num, y1_num, x2_num, y2_num, conf_num, clas_num = num
-                                if inside_box([x1r, y1r, x2r, y2r], [x1_num, y1_num, x2_num, y2_num]):
-                                    try:
-                                        print('-----------------------',print(head_list))
-                                        num_img = orifinal_frame[y1_num:y2_num, x1_num:x2_num]
-                                        plate_img_path = 'temp_plates/temp_plate.jpg'
-                                        cv2.imwrite(plate_img_path, num_img)  # Save the plate as an image file
-                                        plate_text = image_to_text(plate_img_path)  # Pass the file path to the function
-                                        frame = cv2.putText(frame, f'{round(helmet_present[1], 1)} No Helmet {plate_text}', (x1h, y1h + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
-                                        cv2.imwrite(f'number_plates/{time_stamp}_{conf_num}.jpg', num_img)
-                                        os.remove(plate_img_path)  # Remove the temporary plate image file
-                                    except Exception as e:
-                                        print(f'Error: {e}')
+                        frame = cv2.putText(frame, f'{round(helmet_present[1], 2)} Helmet Detected', (x1h, y1h + 40),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
 
                     elif helmet_present[0] == None:
                         frame = cv2.rectangle(frame, (x1h, y1h), (x2h, y2h), (0, 255, 255), 1)
                         frame = cv2.putText(frame, f'{round(helmet_present[1], 1)} Predicting Helmet', (x1h, y1h), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
+
                     elif helmet_present[0] == False:  # if helmet absent
                         frame = cv2.rectangle(frame, (x1h, y1h), (x2h, y2h), (255, 0, 255), 5)
                         frame = cv2.putText(frame, f'{round(helmet_present[1], 1)} No Helmet', (x1h, y1h + 40),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2, cv2.LINE_AA)
+
                         try:
                             cv2.imwrite(f'riders_pictures/{time_stamp}.jpg', frame[y1r:y2r, x1r:x2r])
                         except:
@@ -92,6 +77,7 @@ while (cap.isOpened()):
                                 except Exception as e:
                                     print(f'Error: {e}')
 
+
         if save_video:  # save video
             out.write(frame)
         if save_img:  # save img
@@ -99,6 +85,8 @@ while (cap.isOpened()):
         if show_video:  # show video
             frame = cv2.resize(frame, (800, 480))
             cv2.imshow('Frame', frame)
+
+
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break

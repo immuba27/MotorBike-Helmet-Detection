@@ -44,3 +44,215 @@
 2023-10-16 11:05:01,313 - INFO - File '1697434391.079314_0.46.jpg' removed successfully.
 2023-10-16 11:05:02,441 - WARNING - Image: 1697434393.1751952_0.51.jpg, Plate Text: GJ16BP5250 already exists in the database
 2023-10-16 11:05:02,441 - INFO - File '1697434393.1751952_0.51.jpg' removed successfully.
+2023-10-19 23:30:57,703 - WARNING - Image: 1697737579.874417_0.51.jpg, Plate Text: GAD87547 already exists in the database
+2023-10-19 23:30:57,704 - INFO - File '1697737579.874417_0.51.jpg' removed successfully.
+2023-10-19 23:30:58,474 - INFO - File '1697737592.0870168_0.58.jpg' No plate detected.
+2023-10-19 23:32:00,411 - INFO - Image: 1697737592.0870168_0.58.jpg, Plate Text: GA11B7547 (Inserted into MySQL)
+2023-10-19 23:32:00,412 - INFO - File '1697737592.0870168_0.58.jpg' removed successfully.
+2023-10-19 23:36:28,837 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-10-19 23:36:28,840 - INFO - Added job "my_job" to job store "default"
+2023-10-19 23:36:28,840 - INFO - Scheduler started
+2023-10-19 23:36:29,025 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-19 23:36:29,026 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-19 23:36:29,029 - INFO -  * Restarting with stat
+2023-10-19 23:36:33,260 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-10-19 23:36:33,261 - INFO - Added job "my_job" to job store "default"
+2023-10-19 23:36:33,261 - INFO - Scheduler started
+2023-10-19 23:36:33,268 - WARNING -  * Debugger is active!
+2023-10-19 23:36:33,270 - INFO -  * Debugger PIN: 472-615-425
+2023-10-19 23:36:38,844 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:36:38 +0530)" (scheduled at 2023-10-19 23:36:38.837559+05:30)
+2023-10-19 23:36:38,862 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:36:48 +0530)" executed successfully
+2023-10-19 23:36:43,269 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:36:43 +0530)" (scheduled at 2023-10-19 23:36:43.260734+05:30)
+2023-10-19 23:36:43,294 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:36:53 +0530)" executed successfully
+2023-10-19 23:36:48,310 - INFO - 127.0.0.1 - - [19/Oct/2023 23:36:48] "GET / HTTP/1.1" 200 -
+2023-10-19 23:36:48,851 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:36:58 +0530)" (scheduled at 2023-10-19 23:36:48.837559+05:30)
+2023-10-19 23:36:48,860 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:36:58 +0530)" executed successfully
+2023-10-19 23:36:48,923 - INFO - 127.0.0.1 - - [19/Oct/2023 23:36:48] "GET /video_feed HTTP/1.1" 200 -
+2023-10-19 23:36:49,425 - INFO - 127.0.0.1 - - [19/Oct/2023 23:36:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-10-19 23:36:53,272 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:03 +0530)" (scheduled at 2023-10-19 23:36:53.260734+05:30)
+2023-10-19 23:36:53,284 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:03 +0530)" executed successfully
+2023-10-19 23:36:58,865 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:08 +0530)" (scheduled at 2023-10-19 23:36:58.837559+05:30)
+2023-10-19 23:36:58,865 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:08 +0530)" executed successfully
+2023-10-19 23:37:03,272 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:13 +0530)" (scheduled at 2023-10-19 23:37:03.260734+05:30)
+2023-10-19 23:37:03,272 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:13 +0530)" executed successfully
+2023-10-19 23:37:08,851 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:18 +0530)" (scheduled at 2023-10-19 23:37:08.837559+05:30)
+2023-10-19 23:37:08,851 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:18 +0530)" executed successfully
+2023-10-19 23:37:13,273 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:23 +0530)" (scheduled at 2023-10-19 23:37:13.260734+05:30)
+2023-10-19 23:37:13,285 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:23 +0530)" executed successfully
+2023-10-19 23:37:18,849 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:28 +0530)" (scheduled at 2023-10-19 23:37:18.837559+05:30)
+2023-10-19 23:37:18,859 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:28 +0530)" executed successfully
+2023-10-19 23:37:23,268 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:33 +0530)" (scheduled at 2023-10-19 23:37:23.260734+05:30)
+2023-10-19 23:37:23,279 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:33 +0530)" executed successfully
+2023-10-19 23:37:28,846 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:38 +0530)" (scheduled at 2023-10-19 23:37:28.837559+05:30)
+2023-10-19 23:37:28,856 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:38 +0530)" executed successfully
+2023-10-19 23:37:33,273 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:43 +0530)" (scheduled at 2023-10-19 23:37:33.260734+05:30)
+2023-10-19 23:37:33,286 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:43 +0530)" executed successfully
+2023-10-19 23:37:38,846 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:48 +0530)" (scheduled at 2023-10-19 23:37:38.837559+05:30)
+2023-10-19 23:37:38,859 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:48 +0530)" executed successfully
+2023-10-19 23:37:43,268 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:53 +0530)" (scheduled at 2023-10-19 23:37:43.260734+05:30)
+2023-10-19 23:37:43,280 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:53 +0530)" executed successfully
+2023-10-19 23:37:48,851 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:58 +0530)" (scheduled at 2023-10-19 23:37:48.837559+05:30)
+2023-10-19 23:37:48,861 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:37:58 +0530)" executed successfully
+2023-10-19 23:37:53,265 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:03 +0530)" (scheduled at 2023-10-19 23:37:53.260734+05:30)
+2023-10-19 23:37:53,276 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:03 +0530)" executed successfully
+2023-10-19 23:37:58,838 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:08 +0530)" (scheduled at 2023-10-19 23:37:58.837559+05:30)
+2023-10-19 23:37:58,849 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:08 +0530)" executed successfully
+2023-10-19 23:38:03,274 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:13 +0530)" (scheduled at 2023-10-19 23:38:03.260734+05:30)
+2023-10-19 23:38:03,284 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:13 +0530)" executed successfully
+2023-10-19 23:38:08,841 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:18 +0530)" (scheduled at 2023-10-19 23:38:08.837559+05:30)
+2023-10-19 23:38:08,851 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:18 +0530)" executed successfully
+2023-10-19 23:38:13,271 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:23 +0530)" (scheduled at 2023-10-19 23:38:13.260734+05:30)
+2023-10-19 23:38:13,283 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:23 +0530)" executed successfully
+2023-10-19 23:38:18,840 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:28 +0530)" (scheduled at 2023-10-19 23:38:18.837559+05:30)
+2023-10-19 23:38:18,855 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:28 +0530)" executed successfully
+2023-10-19 23:38:23,266 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:33 +0530)" (scheduled at 2023-10-19 23:38:23.260734+05:30)
+2023-10-19 23:38:23,273 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:33 +0530)" executed successfully
+2023-10-19 23:38:28,851 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:38 +0530)" (scheduled at 2023-10-19 23:38:28.837559+05:30)
+2023-10-19 23:38:28,863 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:38 +0530)" executed successfully
+2023-10-19 23:38:33,266 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:43 +0530)" (scheduled at 2023-10-19 23:38:33.260734+05:30)
+2023-10-19 23:38:33,270 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:43 +0530)" executed successfully
+2023-10-19 23:38:38,848 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:48 +0530)" (scheduled at 2023-10-19 23:38:38.837559+05:30)
+2023-10-19 23:38:38,854 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:48 +0530)" executed successfully
+2023-10-19 23:38:43,265 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:53 +0530)" (scheduled at 2023-10-19 23:38:43.260734+05:30)
+2023-10-19 23:38:43,273 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:53 +0530)" executed successfully
+2023-10-19 23:38:48,838 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:58 +0530)" (scheduled at 2023-10-19 23:38:48.837559+05:30)
+2023-10-19 23:38:48,851 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:38:58 +0530)" executed successfully
+2023-10-19 23:38:53,265 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:03 +0530)" (scheduled at 2023-10-19 23:38:53.260734+05:30)
+2023-10-19 23:38:53,266 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:03 +0530)" executed successfully
+2023-10-19 23:38:58,849 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:08 +0530)" (scheduled at 2023-10-19 23:38:58.837559+05:30)
+2023-10-19 23:38:58,864 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:08 +0530)" executed successfully
+2023-10-19 23:39:03,264 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:13 +0530)" (scheduled at 2023-10-19 23:39:03.260734+05:30)
+2023-10-19 23:39:03,273 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:13 +0530)" executed successfully
+2023-10-19 23:39:08,849 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:18 +0530)" (scheduled at 2023-10-19 23:39:08.837559+05:30)
+2023-10-19 23:39:08,856 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:18 +0530)" executed successfully
+2023-10-19 23:39:13,265 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:23 +0530)" (scheduled at 2023-10-19 23:39:13.260734+05:30)
+2023-10-19 23:39:13,281 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:23 +0530)" executed successfully
+2023-10-19 23:39:18,850 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:28 +0530)" (scheduled at 2023-10-19 23:39:18.837559+05:30)
+2023-10-19 23:39:18,850 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:28 +0530)" executed successfully
+2023-10-19 23:39:23,265 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:33 +0530)" (scheduled at 2023-10-19 23:39:23.260734+05:30)
+2023-10-19 23:39:23,278 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:33 +0530)" executed successfully
+2023-10-19 23:39:28,852 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:38 +0530)" (scheduled at 2023-10-19 23:39:28.837559+05:30)
+2023-10-19 23:39:28,863 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:38 +0530)" executed successfully
+2023-10-19 23:39:33,276 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:43 +0530)" (scheduled at 2023-10-19 23:39:33.260734+05:30)
+2023-10-19 23:39:33,287 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:43 +0530)" executed successfully
+2023-10-19 23:39:38,846 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:48 +0530)" (scheduled at 2023-10-19 23:39:38.837559+05:30)
+2023-10-19 23:39:38,854 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:48 +0530)" executed successfully
+2023-10-19 23:39:43,269 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:53 +0530)" (scheduled at 2023-10-19 23:39:43.260734+05:30)
+2023-10-19 23:39:43,279 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:53 +0530)" executed successfully
+2023-10-19 23:39:48,845 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:58 +0530)" (scheduled at 2023-10-19 23:39:48.837559+05:30)
+2023-10-19 23:39:48,854 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:39:58 +0530)" executed successfully
+2023-10-19 23:39:53,263 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:03 +0530)" (scheduled at 2023-10-19 23:39:53.260734+05:30)
+2023-10-19 23:39:53,273 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:03 +0530)" executed successfully
+2023-10-19 23:39:58,841 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:08 +0530)" (scheduled at 2023-10-19 23:39:58.837559+05:30)
+2023-10-19 23:39:58,851 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:08 +0530)" executed successfully
+2023-10-19 23:40:03,268 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:13 +0530)" (scheduled at 2023-10-19 23:40:03.260734+05:30)
+2023-10-19 23:40:03,278 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:13 +0530)" executed successfully
+2023-10-19 23:40:08,839 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:18 +0530)" (scheduled at 2023-10-19 23:40:08.837559+05:30)
+2023-10-19 23:40:08,849 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:18 +0530)" executed successfully
+2023-10-19 23:40:13,275 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:23 +0530)" (scheduled at 2023-10-19 23:40:13.260734+05:30)
+2023-10-19 23:40:13,285 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:23 +0530)" executed successfully
+2023-10-19 23:40:18,844 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:28 +0530)" (scheduled at 2023-10-19 23:40:18.837559+05:30)
+2023-10-19 23:40:18,853 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:28 +0530)" executed successfully
+2023-10-19 23:40:23,265 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:33 +0530)" (scheduled at 2023-10-19 23:40:23.260734+05:30)
+2023-10-19 23:40:23,274 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:33 +0530)" executed successfully
+2023-10-19 23:40:28,850 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:38 +0530)" (scheduled at 2023-10-19 23:40:28.837559+05:30)
+2023-10-19 23:40:28,859 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:38 +0530)" executed successfully
+2023-10-19 23:40:33,263 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:43 +0530)" (scheduled at 2023-10-19 23:40:33.260734+05:30)
+2023-10-19 23:40:33,273 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:43 +0530)" executed successfully
+2023-10-19 23:40:38,850 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:48 +0530)" (scheduled at 2023-10-19 23:40:38.837559+05:30)
+2023-10-19 23:40:38,859 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:48 +0530)" executed successfully
+2023-10-19 23:40:43,264 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:53 +0530)" (scheduled at 2023-10-19 23:40:43.260734+05:30)
+2023-10-19 23:40:43,274 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:53 +0530)" executed successfully
+2023-10-19 23:40:48,844 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:58 +0530)" (scheduled at 2023-10-19 23:40:48.837559+05:30)
+2023-10-19 23:40:48,853 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:40:58 +0530)" executed successfully
+2023-10-19 23:40:53,266 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:03 +0530)" (scheduled at 2023-10-19 23:40:53.260734+05:30)
+2023-10-19 23:40:53,276 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:03 +0530)" executed successfully
+2023-10-19 23:40:58,843 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:08 +0530)" (scheduled at 2023-10-19 23:40:58.837559+05:30)
+2023-10-19 23:40:58,854 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:08 +0530)" executed successfully
+2023-10-19 23:41:03,263 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:13 +0530)" (scheduled at 2023-10-19 23:41:03.260734+05:30)
+2023-10-19 23:41:03,273 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:13 +0530)" executed successfully
+2023-10-19 23:41:08,844 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:18 +0530)" (scheduled at 2023-10-19 23:41:08.837559+05:30)
+2023-10-19 23:41:08,853 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:18 +0530)" executed successfully
+2023-10-19 23:41:13,266 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:23 +0530)" (scheduled at 2023-10-19 23:41:13.260734+05:30)
+2023-10-19 23:41:13,275 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:23 +0530)" executed successfully
+2023-10-19 23:41:18,840 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:28 +0530)" (scheduled at 2023-10-19 23:41:18.837559+05:30)
+2023-10-19 23:41:18,850 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:28 +0530)" executed successfully
+2023-10-19 23:41:23,275 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:33 +0530)" (scheduled at 2023-10-19 23:41:23.260734+05:30)
+2023-10-19 23:41:23,284 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:33 +0530)" executed successfully
+2023-10-19 23:41:28,843 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:38 +0530)" (scheduled at 2023-10-19 23:41:28.837559+05:30)
+2023-10-19 23:41:28,853 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:38 +0530)" executed successfully
+2023-10-19 23:41:33,275 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:43 +0530)" (scheduled at 2023-10-19 23:41:33.260734+05:30)
+2023-10-19 23:41:33,286 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:43 +0530)" executed successfully
+2023-10-19 23:41:38,841 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:48 +0530)" (scheduled at 2023-10-19 23:41:38.837559+05:30)
+2023-10-19 23:41:38,855 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:48 +0530)" executed successfully
+2023-10-19 23:41:43,266 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:53 +0530)" (scheduled at 2023-10-19 23:41:43.260734+05:30)
+2023-10-19 23:41:43,278 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:53 +0530)" executed successfully
+2023-10-19 23:41:48,843 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:58 +0530)" (scheduled at 2023-10-19 23:41:48.837559+05:30)
+2023-10-19 23:41:48,850 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:41:58 +0530)" executed successfully
+2023-10-19 23:41:53,261 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:03 +0530)" (scheduled at 2023-10-19 23:41:53.260734+05:30)
+2023-10-19 23:41:53,272 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:03 +0530)" executed successfully
+2023-10-19 23:41:58,847 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:08 +0530)" (scheduled at 2023-10-19 23:41:58.837559+05:30)
+2023-10-19 23:41:58,847 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:08 +0530)" executed successfully
+2023-10-19 23:42:03,265 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:13 +0530)" (scheduled at 2023-10-19 23:42:03.260734+05:30)
+2023-10-19 23:42:03,274 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:13 +0530)" executed successfully
+2023-10-19 23:42:08,837 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:18 +0530)" (scheduled at 2023-10-19 23:42:08.837559+05:30)
+2023-10-19 23:42:08,847 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:18 +0530)" executed successfully
+2023-10-19 23:42:13,262 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:23 +0530)" (scheduled at 2023-10-19 23:42:13.260734+05:30)
+2023-10-19 23:42:13,263 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:23 +0530)" executed successfully
+2023-10-19 23:42:18,850 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:28 +0530)" (scheduled at 2023-10-19 23:42:18.837559+05:30)
+2023-10-19 23:42:18,850 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:28 +0530)" executed successfully
+2023-10-19 23:42:23,273 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:33 +0530)" (scheduled at 2023-10-19 23:42:23.260734+05:30)
+2023-10-19 23:42:23,276 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:33 +0530)" executed successfully
+2023-10-19 23:42:28,850 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:38 +0530)" (scheduled at 2023-10-19 23:42:28.837559+05:30)
+2023-10-19 23:42:28,850 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:38 +0530)" executed successfully
+2023-10-19 23:42:33,262 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:43 +0530)" (scheduled at 2023-10-19 23:42:33.260734+05:30)
+2023-10-19 23:42:33,269 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:43 +0530)" executed successfully
+2023-10-19 23:42:38,841 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:48 +0530)" (scheduled at 2023-10-19 23:42:38.837559+05:30)
+2023-10-19 23:42:38,849 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:48 +0530)" executed successfully
+2023-10-19 23:42:43,272 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:53 +0530)" (scheduled at 2023-10-19 23:42:43.260734+05:30)
+2023-10-19 23:42:43,272 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:53 +0530)" executed successfully
+2023-10-19 23:42:48,839 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:58 +0530)" (scheduled at 2023-10-19 23:42:48.837559+05:30)
+2023-10-19 23:42:48,843 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:42:58 +0530)" executed successfully
+2023-10-19 23:42:53,272 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:03 +0530)" (scheduled at 2023-10-19 23:42:53.260734+05:30)
+2023-10-19 23:42:53,274 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:03 +0530)" executed successfully
+2023-10-19 23:42:58,837 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:08 +0530)" (scheduled at 2023-10-19 23:42:58.837559+05:30)
+2023-10-19 23:42:58,837 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:08 +0530)" executed successfully
+2023-10-19 23:43:03,272 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:13 +0530)" (scheduled at 2023-10-19 23:43:03.260734+05:30)
+2023-10-19 23:43:03,272 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:13 +0530)" executed successfully
+2023-10-19 23:43:08,845 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:18 +0530)" (scheduled at 2023-10-19 23:43:08.837559+05:30)
+2023-10-19 23:43:08,845 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:18 +0530)" executed successfully
+2023-10-19 23:43:13,267 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:23 +0530)" (scheduled at 2023-10-19 23:43:13.260734+05:30)
+2023-10-19 23:43:13,267 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:23 +0530)" executed successfully
+2023-10-19 23:43:18,841 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:28 +0530)" (scheduled at 2023-10-19 23:43:18.837559+05:30)
+2023-10-19 23:43:18,841 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:28 +0530)" executed successfully
+2023-10-19 23:43:23,269 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:33 +0530)" (scheduled at 2023-10-19 23:43:23.260734+05:30)
+2023-10-19 23:43:23,269 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:33 +0530)" executed successfully
+2023-10-19 23:43:28,843 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:38 +0530)" (scheduled at 2023-10-19 23:43:28.837559+05:30)
+2023-10-19 23:43:28,851 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:38 +0530)" executed successfully
+2023-10-19 23:43:33,260 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:43 +0530)" (scheduled at 2023-10-19 23:43:33.260734+05:30)
+2023-10-19 23:43:33,260 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:43 +0530)" executed successfully
+2023-10-19 23:43:38,849 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:48 +0530)" (scheduled at 2023-10-19 23:43:38.837559+05:30)
+2023-10-19 23:43:38,849 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:48 +0530)" executed successfully
+2023-10-19 23:43:43,272 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:53 +0530)" (scheduled at 2023-10-19 23:43:43.260734+05:30)
+2023-10-19 23:43:43,272 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:53 +0530)" executed successfully
+2023-10-19 23:43:48,839 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:58 +0530)" (scheduled at 2023-10-19 23:43:48.837559+05:30)
+2023-10-19 23:43:48,839 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:43:58 +0530)" executed successfully
+2023-10-19 23:43:53,264 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:03 +0530)" (scheduled at 2023-10-19 23:43:53.260734+05:30)
+2023-10-19 23:43:53,264 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:03 +0530)" executed successfully
+2023-10-19 23:43:58,852 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:08 +0530)" (scheduled at 2023-10-19 23:43:58.837559+05:30)
+2023-10-19 23:43:58,852 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:08 +0530)" executed successfully
+2023-10-19 23:44:03,275 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:13 +0530)" (scheduled at 2023-10-19 23:44:03.260734+05:30)
+2023-10-19 23:44:03,283 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:13 +0530)" executed successfully
+2023-10-19 23:44:08,847 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:18 +0530)" (scheduled at 2023-10-19 23:44:08.837559+05:30)
+2023-10-19 23:44:08,847 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:18 +0530)" executed successfully
+2023-10-19 23:44:13,269 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:23 +0530)" (scheduled at 2023-10-19 23:44:13.260734+05:30)
+2023-10-19 23:44:13,269 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:23 +0530)" executed successfully
+2023-10-19 23:44:18,847 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:28 +0530)" (scheduled at 2023-10-19 23:44:18.837559+05:30)
+2023-10-19 23:44:18,847 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:28 +0530)" executed successfully
+2023-10-19 23:44:23,270 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:33 +0530)" (scheduled at 2023-10-19 23:44:23.260734+05:30)
+2023-10-19 23:44:23,270 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:33 +0530)" executed successfully
+2023-10-19 23:44:28,839 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:38 +0530)" (scheduled at 2023-10-19 23:44:28.837559+05:30)
+2023-10-19 23:44:28,849 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:38 +0530)" executed successfully
+2023-10-19 23:44:33,273 - INFO - Running job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:43 +0530)" (scheduled at 2023-10-19 23:44:33.260734+05:30)
+2023-10-19 23:44:33,279 - INFO - Job "my_job (trigger: interval[0:00:10], next run at: 2023-10-19 23:44:43 +0530)" executed successfully

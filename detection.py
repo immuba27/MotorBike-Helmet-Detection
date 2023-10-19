@@ -1,14 +1,11 @@
 from my_functions import *
-# import pytesseract
 import os
-# pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
 source = 'mb1.mp4'
 
 save_video = True
 show_video = True
 save_img = False
-# when using image as input, lower the threshold value of image classification
 
 # saveing video as output
 fourcc = cv2.VideoWriter_fourcc(*'XVID')

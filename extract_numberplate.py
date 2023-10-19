@@ -106,9 +106,9 @@ def my_job():
     print("Job is completed...")
 
 # Schedule the job to run every 5 minutes
-schedule.every(1).minutes.do(my_job)
+# schedule.every(1).minutes.do(my_job)
 
 # Run the scheduler
-while True:
-    schedule.run_pending()
-    time.sleep(1)  # Sleep for 1 second to avoid high CPU usage
+# while True:
+#     schedule.run_pending()
+#     time.sleep(1)  # Sleep for 1 second to avoid high CPU usage
