@@ -123,7 +123,7 @@ def generate_frames():
 
 @app.route("/")
 def index():
-    return render_template("index.html")  # Assuming you have an HTML file for video display
+    return render_template("index.html")
 
 
 @app.route("/video_feed")
@@ -131,11 +131,10 @@ def video_feed():
 
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-print("Before")
 scheduler = BackgroundScheduler(daemon=True)
 scheduler.add_job(my_job, 'interval', seconds=30)
 scheduler.start()
-print("After")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

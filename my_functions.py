@@ -23,7 +23,7 @@ names = model.module.names if hasattr(model, 'module') else model.names
 
 ### Image classification
 # labels = ['helmet', 'no helmet']
-model2 = torch.load(helmet_classifier_weight, map_location=device)  # ... may need full path
+model2 = torch.load(helmet_classifier_weight, map_location=device)
 model2.eval()
 
 
