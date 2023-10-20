@@ -1,8 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.9
-
-# Install libgl1-mesa-glx
-RUN apt-get update && apt-get install -y libgl1-mesa-glx
+FROM python:3.9-slim-buster
 
 # Set the working directory in the container
 WORKDIR /app
