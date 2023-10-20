@@ -1,7 +1,7 @@
 from my_functions import *
 import os
 
-source = 'mb1.mp4'
+source = 'with&without helmet.mp4'
 
 save_video = True
 show_video = True
@@ -14,6 +14,7 @@ out = cv2.VideoWriter('output.avi', fourcc, 20.0, frame_size)
 previous_person_count = 0
 
 cap = cv2.VideoCapture(source)
+
 while (cap.isOpened()):
     ret, frame = cap.read()
     if ret == True:
@@ -49,26 +50,50 @@ while (cap.isOpened()):
                     except:
                         helmet_present[0] = None
 
-                    if helmet_present[0] == True:  # if helmet present
-                        frame = cv2.rectangle(frame, (x1h, y1h), (x2h, y2h), (0, 255, 0), 1)
-                        frame = cv2.putText(frame, f'{round(helmet_present[1], 2)} Helmet Detected', (x1h, y1h + 40),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
+                        if helmet_present[0] == True:  # if helmet present
+                            frame = cv2.rectangle(frame, (x1h, y1h), (x2h, y2h), (0, 255, 0), 1)
+                            frame = cv2.putText(frame, f'{round(helmet_present[1], 2)} Helmet Detected',
+                                                (x1h, y1h + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1,
+                                                cv2.LINE_AA)
 
-                        #newly added
-                        person_count += 1
+                            person_count += 1
 
-                        if person_count > 1:
-                            print(f"Total {person_count} person(s) detected: Violation Motorbike Rules")
-                        # previous_person_count = person_count
+                    if person_count > 1:
+                        print(f"Total {person_count} person(s): Triples Detected")
+                        try:
+                            cv2.imwrite(f'riders_pictures/triples_{time_stamp}.jpg',
+                                        orifinal_frame[y1r:y2r, x1r:x2r])
+                        except:
+                            print('could not save rider')
+
+                        for num in number_list:
+                            x1_num, y1_num, x2_num, y2_num, conf_num, clas_num = num
+                            if inside_box([x1r, y1r, x2r, y2r], [x1_num, y1_num, x2_num, y2_num]):
+                                try:
+                                    num_img = orifinal_frame[y1_num:y2_num, x1_num:x2_num]
+                                    plate_img_path = f'temp_plates/lpr_temp_plate.jpg'
+                                    cv2.imwrite(plate_img_path, num_img)  # Save the plate as an image file
+                                    plate_text = image_to_text(
+                                        plate_img_path)  # Pass the file path to the function
+                                    frame = cv2.putText(frame,
+                                                        f'{round(helmet_present[1], 2)} Triples Detected {plate_text}',
+                                                        (x1h, y1h + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
+                                                        (0, 0, 255), 1, cv2.LINE_AA)
+                                    cv2.imwrite(f'number_plates/triples_{time_stamp}_{conf_num}.jpg', num_img)
+                                    os.remove(plate_img_path)  # Remove the temporary plate image file
+                                except Exception as e:
+                                    print(f'Error: {e}')
 
                     elif helmet_present[0] == None:
                         frame = cv2.rectangle(frame, (x1h, y1h), (x2h, y2h), (0, 255, 255), 1)
                         frame = cv2.putText(frame, f'{round(helmet_present[1], 1)} Predicting Helmet', (x1h, y1h), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
                     elif helmet_present[0] == False:  # if helmet absent
                         frame = cv2.rectangle(frame, (x1h, y1h), (x2h, y2h), (255, 0, 255), 5)
-                        frame = cv2.putText(frame, f'{round(helmet_present[1], 1)} No Helmet', (x1h, y1h + 40),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2, cv2.LINE_AA)
+                        frame = cv2.putText(frame, f'{round(helmet_present[1], 1)} No Helmet', (x1h, y1h + 40),
+                                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2, cv2.LINE_AA)
 
                         try:
-                            cv2.imwrite(f'riders_pictures/{time_stamp}.jpg', frame[y1r:y2r, x1r:x2r])
+                            cv2.imwrite(f'riders_pictures/nohelmet_{time_stamp}.jpg', orifinal_frame[y1r:y2r, x1r:x2r])
                         except:
                             print('could not save rider')
 
@@ -81,11 +106,11 @@ while (cap.isOpened()):
                                     cv2.imwrite(plate_img_path, num_img)  # Save the plate as an image file
                                     plate_text = image_to_text(plate_img_path)  # Pass the file path to the function
                                     # print(plate_text)
-                                    frame = cv2.putText(frame, f'{round(helmet_present[1], 1)} No Helmet {plate_text}',(x1h, y1h + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1,cv2.LINE_AA)
-                                    cv2.imwrite(f'number_plates/{time_stamp}_{conf_num}.jpg', num_img)
+                                    frame = cv2.putText(frame, f'{round(helmet_present[1], 1)} No Helmet {plate_text}',
+                                                        (x1h, y1h + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1,
+                                                        cv2.LINE_AA)
+                                    cv2.imwrite(f'number_plates/nohelmet_{time_stamp}_{conf_num}.jpg', num_img)
                                     os.remove(plate_img_path)  # Remove the temporary plate image file
-                                # except:
-                                #     print('could not save number plate')
                                 except Exception as e:
                                     print(f'Error: {e}')
 

@@ -42,6 +42,17 @@ def my_job():
         if filename.endswith(('.jpg', '.jpeg', '.png')):
             image_path = os.path.join(image_folder, filename)
 
+            # Extract the file prefix
+            file_prefix = filename.split('_')[0]
+
+            # Set default violation type
+            violation_type = 'Unknown Violation'
+
+            if file_prefix == 'nohelmet':
+                violation_type = 'No-Helmet Detection'
+            elif file_prefix == 'triples':
+                violation_type = 'Triples Detected'
+
             with open(image_path, 'rb') as fp:
                 response = requests.post(
                     'https://api.platerecognizer.com/v1/plate-reader/',
@@ -67,7 +78,7 @@ def my_job():
                 if not existing_record:
                     # Insert the extracted text into the MySQL database table
                     insert_query = "INSERT INTO numberplatedetection (datetime, violation_type, number_plate) VALUES (%s, %s, %s)"
-                    insert_data = (current_datetime, 'Helmet-less', plate_text)
+                    insert_data = (current_datetime, violation_type, plate_text)
                     cursor.execute(insert_query, insert_data)
                     connection.commit()
 
@@ -77,7 +88,7 @@ def my_job():
                     current_date = datetime.datetime.now().strftime('%Y-%m-%d')
 
                     # Rename the image file with extracted text and move it to the updated folder
-                    new_filename = f'{plate_text}_{current_date}.jpg'
+                    new_filename = f'{file_prefix}_{plate_text}_{current_date}.jpg'
                     new_image_path = os.path.join(updated_image_folder, new_filename)
                     shutil.move(image_path, new_image_path)
                     logging.info(f"File '{filename}' removed successfully.")
