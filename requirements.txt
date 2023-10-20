@@ -10,3 +10,6 @@ flask
 apscheduler
 requests
 mysql-connector-python
+pyyaml
+scipy
+seaborn

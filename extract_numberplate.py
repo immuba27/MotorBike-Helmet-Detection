@@ -1,11 +1,10 @@
-import schedule
+# import schedule
 import time
 import os
 import requests
 import mysql.connector
 import datetime
-import shutil  # Added for file moving
-
+import shutil
 import logging
 
 # Configuring logging
@@ -13,16 +12,16 @@ logging.basicConfig(filename='extract_numberplate.log', level=logging.INFO, form
 
 def my_job():
     print("Job is running...")  # Replace this with the code you want to execute
-    # Set your PlateRecognizer API token here
+    # Setting your PlateRecognizer API token here
     api_token = 'eea3f25dd03596bb429aab3de722fa70f83b0ef7'
 
-    # Define the folder containing the images
+    # Defining the folder containing the images
     image_folder = 'number_plates/'
 
-    # Define the regions (change to your country)
+    # Defining the regions (change to your country)
     regions = ['gb', 'it']
 
-    # Define the folder for updated images
+    # Defining the folder for updated images
     updated_image_folder = 'number_plates_updated/'
 
     # MySQL database configuration
@@ -33,19 +32,19 @@ def my_job():
         'database': 'motorbike'
     }
 
-    # Establish a connection to the MySQL database
+    # Establishing a connection to the MySQL database
     connection = mysql.connector.connect(**db_config)
     cursor = connection.cursor()
 
-    # Iterate over the files in the folder
+    # Iterating over the files in the folder
     for filename in os.listdir(image_folder):
         if filename.endswith(('.jpg', '.jpeg', '.png')):
             image_path = os.path.join(image_folder, filename)
 
-            # Extract the file prefix
+            # Extracting the file prefix
             file_prefix = filename.split('_')[0]
 
-            # Set default violation type
+            # Setting default violation type
             violation_type = 'Unknown Violation'
 
             if file_prefix == 'nohelmet':
@@ -66,17 +65,17 @@ def my_job():
                 plate_text = data['results'][0]['plate']
                 plate_text = str(plate_text).upper()
 
-                # Get the current datetime as a string
+                # Getting the current datetime as a string
                 current_datetime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-                # Check if the license plate number already exists in the database
+                # Checking if the license plate number already exists in the database
                 check_query = "SELECT * FROM numberplatedetection WHERE number_plate = %s"
                 check_data = (plate_text,)
                 cursor.execute(check_query, check_data)
                 existing_record = cursor.fetchone()
 
                 if not existing_record:
-                    # Insert the extracted text into the MySQL database table
+                    # Inserting the extracted text into the MySQL database table
                     insert_query = "INSERT INTO numberplatedetection (datetime, violation_type, number_plate) VALUES (%s, %s, %s)"
                     insert_data = (current_datetime, violation_type, plate_text)
                     cursor.execute(insert_query, insert_data)
@@ -87,7 +86,7 @@ def my_job():
 
                     current_date = datetime.datetime.now().strftime('%Y-%m-%d')
 
-                    # Rename the image file with extracted text and move it to the updated folder
+                    # Renaming the image file with extracted text and move it to the updated folder
                     new_filename = f'{file_prefix}_{plate_text}_{current_date}.jpg'
                     new_image_path = os.path.join(updated_image_folder, new_filename)
                     shutil.move(image_path, new_image_path)
@@ -115,11 +114,3 @@ def my_job():
     cursor.close()
     connection.close()
     print("Job is completed...")
-
-# Schedule the job to run every 5 minutes
-# schedule.every(1).minutes.do(my_job)
-
-# Run the scheduler
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)  # Sleep for 1 second to avoid high CPU usage
